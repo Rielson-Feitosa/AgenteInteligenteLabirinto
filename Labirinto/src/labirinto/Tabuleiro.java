@@ -1,4 +1,7 @@
 package labirinto;
+
+import java.util.ArrayList;
+
 /*
  char[][] estados =  {	// estados do labirinto : livre ou bloqueado
 				{l,b,l,l,l,l,l,l,l,b}, 
@@ -10,7 +13,7 @@ package labirinto;
 				{b,l,l,l,l,b,b,b,l,b},
 				{b,b,b,l,b,l,l,b,l,l},
 				{l,l,b,l,b,l,l,l,b,l},
-				{l,l,b,l,b,l,l,l,b,b},	};
+				{l,l,b,l,b,l,l,l,b,l},	};
 				
 				char[][] estados =  {	
 				{l,b,l,l,l,l,l,l,b,b}, 
@@ -29,17 +32,18 @@ public class Tabuleiro {
 	private char l = '▪'; // livre
 	
 	public Tabuleiro() {
-		char[][] estados =  {	// estados do labirinto : livre ou bloqueado
-				{l,b,l,l,l,l,l,l,b,b}, 
-				{l,b,b,b,b,b,l,b,b,b},
-				{l,l,l,l,l,l,l,l,l,b},
-				{b,b,b,b,b,b,l,b,b,l},
+		char[][] estados =  {	
+				{l,b,l,l,l,l,l,l,l,b}, 
+				{l,b,b,b,b,l,b,b,l,b},
+				{l,l,l,l,b,l,b,l,l,b},
+				{l,b,b,b,b,l,l,b,l,l},
 				{l,b,b,b,b,b,l,b,b,l},
-				{l,l,b,b,b,l,l,b,l,l},
+				{l,l,b,b,l,l,l,b,l,l},
 				{b,l,l,l,l,b,b,b,l,b},
-				{b,b,b,l,l,l,l,b,l,l},
+				{b,b,b,l,b,l,l,b,l,l},
 				{l,l,b,l,b,l,l,l,b,l},
-				{l,l,b,l,b,l,l,l,b,b},	};
+				{l,l,b,l,b,l,l,l,b,l},	};
+		ArrayList<char[][]> x = new ArrayList<char[][]>();
 		this.labirinto = estados;
 	}
 	
